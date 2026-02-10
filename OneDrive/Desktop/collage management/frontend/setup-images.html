@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Setup Guide - AMIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f3f4f6;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #1e40af;
+            margin: 2rem 0 1rem;
+        }
+        .step {
+            background: #eff6ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2563eb;
+        }
+        .step h3 {
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .image-list {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .image-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image-item:last-child {
+            border-bottom: none;
+        }
+        .filename {
+            font-family: 'Courier New', monospace;
+            background: #e5e7eb;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+        code {
+            background: #1f2937;
+            color: #10b981;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: block;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .note {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        ul {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ College Images Setup Guide</h1>
+        <p>Follow these simple steps to add your college images to the website.</p>
+
+        <div class="step">
+            <h3>Step 1: Locate Your Images</h3>
+            <p>Your college images are currently in:</p>
+            <code>C:\Users\ashis\OneDrive\Desktop\Dextop\collage management\.vscode</code>
+        </div>
+
+        <div class="step">
+            <h3>Step 2: Required Images</h3>
+            <p>You need to copy your images to the <strong>images</strong> folder with these names:</p>
+            <div class="image-list">
+                <div class="image-item">
+                    <span>Lab/Workshop Photo</span>
+                    <span class="filename">lab1.jpg</span>
+                </div>
+                <div class="image-item">
+                    <span>Students Group Photo</span>
+                    <span class="filename">students-group.jpg</span>
+                </div>
+                <div class="image-item">
+                    <span>College Event/Cultural</span>
+                    <span class="filename">college-event.jpg</span>
+                </div>
+                <div class="image-item">
+                    <span>College Building/Campus</span>
+                    <span class="filename">college-building.jpg</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Step 3: Copy Images Using File Explorer</h3>
+            <p><strong>Easy Method (Recommended):</strong></p>
+            <ol>
+                <li>Open File Explorer</li>
+                <li>Go to: <code>C:\Users\ashis\OneDrive\Desktop\Dextop\collage management\.vscode</code></li>
+                <li>Select your 4 college images</li>
+                <li>Copy them (Ctrl+C)</li>
+                <li>Go to: <code>C:\Users\ashis\OneDrive\Desktop\Dextop\collage management\images</code></li>
+                <li>Paste them (Ctrl+V)</li>
+                <li>Rename each image according to the list above</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Step 4: Copy Images Using Command Prompt</h3>
+            <p><strong>Alternative Method:</strong></p>
+            <p>Open Command Prompt in your project folder and run:</p>
+            <code>copy ".vscode\your-image-1.jpg" "images\lab1.jpg"</code>
+            <code>copy ".vscode\your-image-2.jpg" "images\students-group.jpg"</code>
+            <code>copy ".vscode\your-image-3.jpg" "images\college-event.jpg"</code>
+            <code>copy ".vscode\your-image-4.jpg" "images\college-building.jpg"</code>
+            <div class="note">
+                <strong>⚠️ Note:</strong> Replace "your-image-1.jpg" with your actual image filenames.
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Step 5: Optional Additional Images</h3>
+            <p>For better appearance, you can also add:</p>
+            <ul>
+                <li><span class="filename">library.jpg</span> - Library photo</li>
+                <li><span class="filename">computer-lab.jpg</span> - Computer lab</li>
+                <li><span class="filename">workshop.jpg</span> - Workshop/practical lab</li>
+                <li><span class="filename">campus1.jpg</span> - Campus view</li>
+            </ul>
+        </div>
+
+        <div class="success">
+            <strong>✅ After Setup:</strong>
+            <p>Once images are copied, refresh your website (index.html) to see your college photos!</p>
+            <p>If images don't appear, the website will automatically show placeholder images.</p>
+        </div>
+
+        <h2>📋 Quick Checklist</h2>
+        <ul>
+            <li>✓ Images folder created</li>
+            <li>✓ Copy 4 main images to images folder</li>
+            <li>✓ Rename images correctly</li>
+            <li>✓ Refresh website to see changes</li>
+        </ul>
+
+        <div class="note">
+            <strong>💡 Tip:</strong> Make sure your images are in JPG format. If they're in PNG or other formats, 
+            rename the extensions in the HTML files accordingly (e.g., change .jpg to .png).
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here - AMIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .links {
+            display: grid;
+            gap: 1rem;
+        }
+        .link-btn {
+            display: block;
+            padding: 1rem 1.5rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-align: center;
+        }
+        .link-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        .link-btn.primary {
+            background: #667eea;
+            color: white;
+        }
+        .link-btn.primary:hover {
+            background: #5568d3;
+        }
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 AMIT College Management</h1>
+        <p class="subtitle">Welcome! Choose where to start</p>
+
+        <div class="section">
+            <h2>🧪 Testing & Demo <span class="status">Start Here</span></h2>
+            <div class="links">
+                <a href="test-integration.html" class="link-btn primary">
+                    🧪 Test API Integration (Run This First!)
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏠 Main Pages</h2>
+            <div class="links">
+                <a href="index.html" class="link-btn">🏠 Home Page</a>
+                <a href="contact.html" class="link-btn">📧 Contact Form (API Connected)</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👨‍🎓 Student Portal</h2>
+            <div class="links">
+                <a href="first-time-user.html" class="link-btn">📝 Register (New Student)</a>
+                <a href="student-portal.html" class="link-btn">🔐 Login (Existing Student)</a>
+                <a href="forgot-password.html" class="link-btn">🔑 Forgot Password</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👨‍🏫 Faculty Portal</h2>
+            <div class="links">
+                <a href="faculty-portal.html" class="link-btn">🔐 Faculty Login</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📚 Other Pages</h2>
+            <div class="links">
+                <a href="about.html" class="link-btn">ℹ️ About</a>
+                <a href="academics.html" class="link-btn">📖 Academics</a>
+                <a href="admissions.html" class="link-btn">🎓 Admissions</a>
+                <a href="faculty.html" class="link-btn">👥 Faculty</a>
+                <a href="library.html" class="link-btn">📚 Library</a>
+                <a href="events.html" class="link-btn">🎉 Events</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📄 Syllabus</h2>
+            <div class="links">
+                <a href="syllabus-btech-cse.html" class="link-btn">💻 B.Tech CSE</a>
+                <a href="syllabus-bca.html" class="link-btn">💻 BCA</a>
+                <a href="syllabus-bba.html" class="link-btn">💼 BBA</a>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>⚠️ Important:</strong> Make sure backend server is running at 
+            <a href="http://localhost:8000" target="_blank" style="color: #667eea;">http://localhost:8000</a>
+        </div>
+
+        <div class="section">
+            <h2>🔧 Admin Panel</h2>
+            <div class="links">
+                <a href="http://localhost:8000/admin/" target="_blank" class="link-btn primary">
+                    🛠️ Django Admin Panel
+                </a>
+            </div>
+            <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                <strong>Login:</strong> admin@amit.edu / admin123
+            </p>
+        </div>
+    </div>
+</body>
+</html>

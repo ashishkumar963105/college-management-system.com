@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - AMIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>AMIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="student-portal.html" class="active">Student Portal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="portal-container">
+        <!-- Login Section -->
+        <div id="loginSection" class="login-section">
+            <div class="login-box">
+                <h2>Student Portal Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="studentId" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <div class="login-links">
+                        <a href="forgot-password.html">Forgot Password?</a>
+                        <a href="first-time-user.html">First Time User?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboardSection" class="dashboard-section" style="display: none;">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <img src="https://ui-avatars.com/api/?name=Student&background=2563eb&color=fff" alt="Profile">
+                    <div>
+                        <h3 id="studentName">Welcome, Student</h3>
+                        <p id="studentCourse">Computer Science Engineering</p>
+                    </div>
+                </div>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <ul class="sidebar-menu">
+                        <li class="active" data-section="overview"><i class="fas fa-home"></i> Overview</li>
+                        <li data-section="attendance"><i class="fas fa-calendar-check"></i> Attendance</li>
+                        <li data-section="grades"><i class="fas fa-chart-line"></i> Grades</li>
+                        <li data-section="courses"><i class="fas fa-book"></i> My Courses</li>
+                        <li data-section="assignments"><i class="fas fa-tasks"></i> Assignments</li>
+                        <li data-section="exams"><i class="fas fa-file-alt"></i> Exams</li>
+                        <li data-section="fees"><i class="fas fa-dollar-sign"></i> Fee Payment</li>
+                        <li data-section="library"><i class="fas fa-book-reader"></i> Library</li>
+                        <li data-section="timetable"><i class="fas fa-clock"></i> Timetable</li>
+                        <li data-section="profile"><i class="fas fa-user-circle"></i> Profile</li>
+                    </ul>
+                </div>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Overview Section -->
+                    <div id="overview" class="content-section active">
+                        <h2>Dashboard Overview</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <i class="fas fa-percentage"></i>
+                                <h3>85%</h3>
+                                <p>Overall Attendance</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-star"></i>
+                                <h3>8.5</h3>
+                                <p>CGPA</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-tasks"></i>
+                                <h3>5</h3>
+                                <p>Pending Assignments</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-calendar"></i>
+                                <h3>2</h3>
+                                <p>Upcoming Exams</p>
+                            </div>
+                        </div>
+
+                        <div class="quick-actions">
+                            <h3>Quick Actions</h3>
+                            <div class="action-buttons">
+                                <button class="action-btn" data-goto="assignments">
+                                    <i class="fas fa-upload"></i> Submit Assignment
+                                </button>
+                                <button class="action-btn" data-goto="fees">
+                                    <i class="fas fa-credit-card"></i> Pay Fees
+                                </button>
+                                <button class="action-btn" data-goto="library">
+                                    <i class="fas fa-book"></i> Issue Book
+                                </button>
+                                <button class="action-btn" data-goto="timetable">
+                                    <i class="fas fa-calendar-alt"></i> View Schedule
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="announcements">
+                            <h3>Recent Announcements</h3>
+                            <div class="announcement-item">
+                                <i class="fas fa-bullhorn"></i>
+                                <div>
+                                    <h4>Mid-Semester Exams Schedule Released</h4>
+                                    <p>Check the exam section for detailed schedule</p>
+                                    <span>2 days ago</span>
+                                </div>
+                            </div>
+                            <div class="announcement-item">
+                                <i class="fas fa-bullhorn"></i>
+                                <div>
+                                    <h4>Library Timings Extended</h4>
+                                    <p>Library now open till 10 PM on weekdays</p>
+                                    <span>5 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Attendance Section -->
+                    <div id="attendance" class="content-section">
+                        <h2>Attendance Record</h2>
+                        <div class="attendance-summary">
+                            <div class="attendance-chart">
+                                <div class="circular-progress" data-percentage="85">
+                                    <span class="percentage">85%</span>
+                                </div>
+                                <p>Overall Attendance</p>
+                            </div>
+                        </div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Classes Held</th>
+                                    <th>Classes Attended</th>
+                                    <th>Percentage</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data Structures</td>
+                                    <td>45</td>
+                                    <td>40</td>
+                                    <td>88.9%</td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Database Management</td>
+                                    <td>42</td>
+                                    <td>38</td>
+                                    <td>90.5%</td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Operating Systems</td>
+                                    <td>40</td>
+                                    <td>32</td>
+                                    <td>80.0%</td>
+                                    <td><span class="badge badge-warning">Average</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Computer Networks</td>
+                                    <td>38</td>
+                                    <td>33</td>
+                                    <td>86.8%</td>
+                                    <td><span class="badge badge-success">Good</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Grades Section -->
+                    <div id="grades" class="content-section">
+                        <h2>Academic Performance</h2>
+                        <div class="grade-summary">
+                            <div class="grade-card">
+                                <h3>Current Semester</h3>
+                                <div class="grade-value">8.7</div>
+                                <p>SGPA</p>
+                            </div>
+                            <div class="grade-card">
+                                <h3>Overall</h3>
+                                <div class="grade-value">8.5</div>
+                                <p>CGPA</p>
+                            </div>
+                        </div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Internal Marks</th>
+                                    <th>External Marks</th>
+                                    <th>Total</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data Structures</td>
+                                    <td>28/30</td>
+                                    <td>65/70</td>
+                                    <td>93/100</td>
+                                    <td><span class="badge badge-success">A+</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Database Management</td>
+                                    <td>26/30</td>
+                                    <td>60/70</td>
+                                    <td>86/100</td>
+                                    <td><span class="badge badge-success">A</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Operating Systems</td>
+                                    <td>25/30</td>
+                                    <td>58/70</td>
+                                    <td>83/100</td>
+                                    <td><span class="badge badge-success">A</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Courses Section -->
+                    <div id="courses" class="content-section">
+                        <h2>My Courses</h2>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <h3>Data Structures & Algorithms</h3>
+                                <p>Prof. John Smith</p>
+                                <div class="course-info">
+                                    <span><i class="fas fa-clock"></i> Mon, Wed, Fri - 9:00 AM</span>
+                                    <span><i class="fas fa-book"></i> 4 Credits</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">View Materials</button>
+                            </div>
+                            <div class="course-card">
+                                <h3>Database Management Systems</h3>
+                                <p>Prof. Sarah Johnson</p>
+                                <div class="course-info">
+                                    <span><i class="fas fa-clock"></i> Tue, Thu - 11:00 AM</span>
+                                    <span><i class="fas fa-book"></i> 4 Credits</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">View Materials</button>
+                            </div>
+                            <div class="course-card">
+                                <h3>Operating Systems</h3>
+                                <p>Prof. Michael Brown</p>
+                                <div class="course-info">
+                                    <span><i class="fas fa-clock"></i> Mon, Wed - 2:00 PM</span>
+                                    <span><i class="fas fa-book"></i> 3 Credits</span>
+                                </div>
+                                <button class="btn btn-primary btn-sm">View Materials</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assignments Section -->
+                    <div id="assignments" class="content-section">
+                        <h2>Assignments</h2>
+                        <div class="assignment-list">
+                            <div class="assignment-item pending">
+                                <div class="assignment-header">
+                                    <h3>Data Structures - Assignment 3</h3>
+                                    <span class="badge badge-warning">Pending</span>
+                                </div>
+                                <p>Implement Binary Search Tree with all operations</p>
+                                <div class="assignment-footer">
+                                    <span><i class="fas fa-calendar"></i> Due: Feb 15, 2026</span>
+                                    <button class="btn btn-primary btn-sm">Submit</button>
+                                </div>
+                            </div>
+                            <div class="assignment-item pending">
+                                <div class="assignment-header">
+                                    <h3>DBMS - Project Report</h3>
+                                    <span class="badge badge-warning">Pending</span>
+                                </div>
+                                <p>Design and implement a database for library management</p>
+                                <div class="assignment-footer">
+                                    <span><i class="fas fa-calendar"></i> Due: Feb 20, 2026</span>
+                                    <button class="btn btn-primary btn-sm">Submit</button>
+                                </div>
+                            </div>
+                            <div class="assignment-item completed">
+                                <div class="assignment-header">
+                                    <h3>Operating Systems - Lab Assignment</h3>
+                                    <span class="badge badge-success">Submitted</span>
+                                </div>
+                                <p>Process scheduling algorithms implementation</p>
+                                <div class="assignment-footer">
+                                    <span><i class="fas fa-check"></i> Submitted on: Feb 5, 2026</span>
+                                    <span class="grade">Grade: 95/100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exams Section -->
+                    <div id="exams" class="content-section">
+                        <h2>Examination Schedule</h2>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Room</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data Structures</td>
+                                    <td>Feb 25, 2026</td>
+                                    <td>9:00 AM - 12:00 PM</td>
+                                    <td>Hall A-101</td>
+                                    <td><span class="badge badge-info">Mid-Sem</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Database Management</td>
+                                    <td>Feb 27, 2026</td>
+                                    <td>2:00 PM - 5:00 PM</td>
+                                    <td>Hall A-102</td>
+                                    <td><span class="badge badge-info">Mid-Sem</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Operating Systems</td>
+                                    <td>Mar 1, 2026</td>
+                                    <td>9:00 AM - 12:00 PM</td>
+                                    <td>Hall B-201</td>
+                                    <td><span class="badge badge-info">Mid-Sem</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary">Download Admit Card</button>
+                    </div>
+
+                    <!-- Fee Payment Section -->
+                    <div id="fees" class="content-section">
+                        <h2>Fee Payment</h2>
+                        <div class="fee-summary">
+                            <div class="fee-card">
+                                <h3>Total Fee</h3>
+                                <div class="fee-amount">₹1,50,000</div>
+                            </div>
+                            <div class="fee-card">
+                                <h3>Paid</h3>
+                                <div class="fee-amount paid">₹1,00,000</div>
+                            </div>
+                            <div class="fee-card">
+                                <h3>Pending</h3>
+                                <div class="fee-amount pending">₹50,000</div>
+                            </div>
+                        </div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Amount</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Semester Fee - Spring 2026</td>
+                                    <td>₹50,000</td>
+                                    <td>Feb 28, 2026</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td><button class="btn btn-primary btn-sm">Pay Now</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Semester Fee - Fall 2025</td>
+                                    <td>₹50,000</td>
+                                    <td>Sep 15, 2025</td>
+                                    <td><span class="badge badge-success">Paid</span></td>
+                                    <td><button class="btn btn-secondary btn-sm">Receipt</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Library Section -->
+                    <div id="library" class="content-section">
+                        <h2>Library</h2>
+                        <div class="library-stats">
+                            <div class="stat-card">
+                                <i class="fas fa-book"></i>
+                                <h3>3</h3>
+                                <p>Books Issued</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-clock"></i>
+                                <h3>0</h3>
+                                <p>Overdue Books</p>
+                            </div>
+                        </div>
+                        <h3>Currently Issued Books</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Book Title</th>
+                                    <th>Author</th>
+                                    <th>Issue Date</th>
+                                    <th>Due Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Introduction to Algorithms</td>
+                                    <td>Cormen, Leiserson</td>
+                                    <td>Jan 20, 2026</td>
+                                    <td>Feb 20, 2026</td>
+                                    <td><button class="btn btn-secondary btn-sm">Renew</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Database System Concepts</td>
+                                    <td>Silberschatz, Korth</td>
+                                    <td>Jan 25, 2026</td>
+                                    <td>Feb 25, 2026</td>
+                                    <td><button class="btn btn-secondary btn-sm">Renew</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary">Search Books</button>
+                    </div>
+
+                    <!-- Timetable Section -->
+                    <div id="timetable" class="content-section">
+                        <h2>Class Timetable</h2>
+                        <div class="timetable">
+                            <table class="timetable-table">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9:00 - 10:00</td>
+                                        <td class="class-slot">Data Structures<br><small>Room 301</small></td>
+                                        <td class="class-slot">DBMS<br><small>Room 205</small></td>
+                                        <td class="class-slot">Data Structures<br><small>Room 301</small></td>
+                                        <td class="class-slot">DBMS<br><small>Room 205</small></td>
+                                        <td class="class-slot">Data Structures<br><small>Room 301</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 - 11:00</td>
+                                        <td class="class-slot">OS<br><small>Room 402</small></td>
+                                        <td class="break">Break</td>
+                                        <td class="class-slot">OS<br><small>Room 402</small></td>
+                                        <td class="break">Break</td>
+                                        <td class="class-slot">Networks<br><small>Room 303</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:00 - 12:00</td>
+                                        <td class="break">Break</td>
+                                        <td class="class-slot">Networks<br><small>Room 303</small></td>
+                                        <td class="break">Break</td>
+                                        <td class="class-slot">Networks<br><small>Room 303</small></td>
+                                        <td class="break">Break</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 1:00</td>
+                                        <td colspan="5" class="lunch">Lunch Break</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2:00 - 5:00</td>
+                                        <td class="lab">DS Lab<br><small>Lab 1</small></td>
+                                        <td class="lab">DBMS Lab<br><small>Lab 2</small></td>
+                                        <td class="lab">OS Lab<br><small>Lab 3</small></td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Profile Section -->
+                    <div id="profile" class="content-section">
+                        <h2>Student Profile</h2>
+                        <div class="profile-container">
+                            <div class="profile-header">
+                                <img src="https://ui-avatars.com/api/?name=Student&size=150&background=2563eb&color=fff" alt="Profile">
+                                <button class="btn btn-secondary btn-sm">Change Photo</button>
+                            </div>
+                            <div class="profile-details">
+                                <div class="detail-row">
+                                    <label>Name:</label>
+                                    <span>Student Name</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Student ID:</label>
+                                    <span>AMIT2023001</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Course:</label>
+                                    <span>B.Tech Computer Science Engineering</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Semester:</label>
+                                    <span>6th Semester</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Email:</label>
+                                    <span>student@amit.edu</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Phone:</label>
+                                    <span>+91 9876543210</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Date of Birth:</label>
+                                    <span>January 15, 2003</span>
+                                </div>
+                                <div class="detail-row">
+                                    <label>Address:</label>
+                                    <span>123 Main Street, City, State - 123456</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="portal.js"></script>
+    <script src="js/api-helper.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Real API Login Functionality
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('studentId').value;
+            const password = document.getElementById('password').value;
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            showLoading(submitButton);
+            
+            const result = await handleLogin(email, password);
+            
+            hideLoading(submitButton);
+            
+            if (result.success) {
+                // Login successful, page will redirect automatically
+                loginSuccess(result.data.user.name, result.data.user.role);
+            }
+        });
+        
+        // Logout functionality
+        document.getElementById('logoutBtn')?.addEventListener('click', async function() {
+            if (confirm('Are you sure you want to logout?')) {
+                await logout();
+            }
+        });
+        
+        function loginSuccess(name, role) {
+            // Hide login, show dashboard
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('dashboardSection').style.display = 'block';
+            
+            // Update student info
+            document.getElementById('studentName').textContent = 'Welcome, ' + name;
+            document.getElementById('studentCourse').textContent = role.charAt(0).toUpperCase() + role.slice(1);
+        }
+        
+        // Check if already logged in
+        window.addEventListener('DOMContentLoaded', async () => {
+            if (isAuthenticated()) {
+                const valid = await verifyToken();
+                if (valid) {
+                    const user = getCurrentUser();
+                    if (user.role === 'student') {
+                        loginSuccess(user.name, user.role);
+                    } else {
+                        // Not a student, redirect
+                        alert('Access denied. This portal is for students only.');
+                        await logout();
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

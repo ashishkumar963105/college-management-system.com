@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty - AMIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>AMIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html" class="active">Faculty</a></li>
+                    <li><a href="student-portal.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Faculty</h1>
+        <p>Meet Our Experienced & Dedicated Educators</p>
+    </section>
+
+    <section class="faculty-content">
+        <div class="container">
+            <div class="faculty-intro">
+                <h2>Excellence in Teaching</h2>
+                <p>Our faculty members are highly qualified professionals with extensive academic and industry experience. They are committed to providing quality education and mentoring students to achieve their full potential.</p>
+            </div>
+
+            <div class="department-tabs">
+                <button class="dept-btn active" data-dept="all">All Departments</button>
+                <button class="dept-btn" data-dept="cse">Computer Science</button>
+                <button class="dept-btn" data-dept="mech">Mechanical</button>
+                <button class="dept-btn" data-dept="eee">Electrical</button>
+                <button class="dept-btn" data-dept="civil">Civil</button>
+                <button class="dept-btn" data-dept="ece">Electronics</button>
+                <button class="dept-btn" data-dept="bba">BBA</button>
+                <button class="dept-btn" data-dept="bca">BCA</button>
+            </div>
+
+            <div class="faculty-grid" id="facultyGrid">
+                <!-- Computer Science Faculty -->
+                <div class="faculty-card" data-department="cse">
+                    <img src="images/rajesh-kumar.jpg" alt="Dr. Rajesh Kumar" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/32.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Rajesh Kumar</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Computer Science & Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Computer Science</p>
+                            <p><i class="fas fa-briefcase"></i> 18 Years Experience</p>
+                            <p><i class="fas fa-book"></i> AI & Machine Learning</p>
+                            <p><i class="fas fa-envelope"></i> rajesh.kumar@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:rajesh.kumar@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="cse">
+                    <img src="images/priya-sharma.jpg" alt="Dr. Priya Sharma" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/44.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Priya Sharma</h3>
+                        <p class="faculty-designation">Associate Professor</p>
+                        <p class="faculty-department">Computer Science & Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Data Science</p>
+                            <p><i class="fas fa-briefcase"></i> 12 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Data Analytics & Big Data</p>
+                            <p><i class="fas fa-envelope"></i> priya.sharma@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:priya.sharma@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="cse">
+                    <img src="images/amit-verma.jpg" alt="Prof. Amit Verma" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/22.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Amit Verma</h3>
+                        <p class="faculty-designation">Assistant Professor</p>
+                        <p class="faculty-department">Computer Science & Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> M.Tech in CSE</p>
+                            <p><i class="fas fa-briefcase"></i> 8 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Web Development & Cloud</p>
+                            <p><i class="fas fa-envelope"></i> amit.verma@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:amit.verma@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical Faculty -->
+                <div class="faculty-card" data-department="mech">
+                    <img src="images/suresh-patel.jpg" alt="Dr. Suresh Patel" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/45.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Suresh Patel</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Mechanical Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Mechanical Engg.</p>
+                            <p><i class="fas fa-briefcase"></i> 20 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Thermal Engineering</p>
+                            <p><i class="fas fa-envelope"></i> suresh.patel@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:suresh.patel@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="mech">
+                    <img src="images/kavita-singh.jpg" alt="Dr. Kavita Singh" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/65.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Kavita Singh</h3>
+                        <p class="faculty-designation">Associate Professor</p>
+                        <p class="faculty-department">Mechanical Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Manufacturing</p>
+                            <p><i class="fas fa-briefcase"></i> 14 Years Experience</p>
+                            <p><i class="fas fa-book"></i> CAD/CAM & Robotics</p>
+                            <p><i class="fas fa-envelope"></i> kavita.singh@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:kavita.singh@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electrical Faculty -->
+                <div class="faculty-card" data-department="eee">
+                    <img src="images/anil-gupta.jpg" alt="Dr. Anil Gupta" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/52.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Anil Gupta</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Electrical Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Power Systems</p>
+                            <p><i class="fas fa-briefcase"></i> 22 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Renewable Energy</p>
+                            <p><i class="fas fa-envelope"></i> anil.gupta@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:anil.gupta@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="eee">
+                    <img src="images/neha-reddy.jpg" alt="Prof. Neha Reddy" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/32.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Neha Reddy</h3>
+                        <p class="faculty-designation">Assistant Professor</p>
+                        <p class="faculty-department">Electrical Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> M.Tech in EEE</p>
+                            <p><i class="fas fa-briefcase"></i> 9 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Control Systems</p>
+                            <p><i class="fas fa-envelope"></i> neha.reddy@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:neha.reddy@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Civil Faculty -->
+                <div class="faculty-card" data-department="civil">
+                    <img src="images/ramesh-rao.jpg" alt="Dr. Ramesh Rao" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/61.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Ramesh Rao</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Civil Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Structural Engg.</p>
+                            <p><i class="fas fa-briefcase"></i> 19 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Structural Design</p>
+                            <p><i class="fas fa-envelope"></i> ramesh.rao@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:ramesh.rao@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="civil">
+                    <img src="images/meera-joshi.jpg" alt="Dr. Meera Joshi" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/55.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Meera Joshi</h3>
+                        <p class="faculty-designation">Associate Professor</p>
+                        <p class="faculty-department">Civil Engineering</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Environmental Engg.</p>
+                            <p><i class="fas fa-briefcase"></i> 13 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Water Resources</p>
+                            <p><i class="fas fa-envelope"></i> meera.joshi@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:meera.joshi@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics Faculty -->
+                <div class="faculty-card" data-department="ece">
+                    <img src="images/vijay-nair.jpg" alt="Dr. Vijay Nair" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/71.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Vijay Nair</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Electronics & Communication</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in VLSI Design</p>
+                            <p><i class="fas fa-briefcase"></i> 17 Years Experience</p>
+                            <p><i class="fas fa-book"></i> VLSI & Embedded Systems</p>
+                            <p><i class="fas fa-envelope"></i> vijay.nair@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:vijay.nair@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="ece">
+                    <img src="images/sneha-das.jpg" alt="Prof. Sneha Das" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/68.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Sneha Das</h3>
+                        <p class="faculty-designation">Assistant Professor</p>
+                        <p class="faculty-department">Electronics & Communication</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> M.Tech in ECE</p>
+                            <p><i class="fas fa-briefcase"></i> 7 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Signal Processing & IoT</p>
+                            <p><i class="fas fa-envelope"></i> sneha.das@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:sneha.das@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="ece">
+                    <img src="images/kiran-kumar.jpg" alt="Dr. Kiran Kumar" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/85.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Kiran Kumar</h3>
+                        <p class="faculty-designation">Associate Professor</p>
+                        <p class="faculty-department">Electronics & Communication</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Communication</p>
+                            <p><i class="fas fa-briefcase"></i> 11 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Wireless Communication</p>
+                            <p><i class="fas fa-envelope"></i> kiran.kumar@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:kiran.kumar@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BBA Faculty -->
+                <div class="faculty-card" data-department="bba">
+                    <img src="images/rahul-mehta.jpg" alt="Dr. Rahul Mehta" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/75.jpg'">
+                    <div class="faculty-info">
+                        <h3>Dr. Rahul Mehta</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> Ph.D. in Management</p>
+                            <p><i class="fas fa-briefcase"></i> 15 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Marketing & Strategy</p>
+                            <p><i class="fas fa-envelope"></i> rahul.mehta@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:rahul.mehta@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="bba">
+                    <img src="images/anjali-kapoor.jpg" alt="Prof. Anjali Kapoor" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/72.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Anjali Kapoor</h3>
+                        <p class="faculty-designation">Associate Professor</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> MBA, M.Com</p>
+                            <p><i class="fas fa-briefcase"></i> 10 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Finance & Accounting</p>
+                            <p><i class="fas fa-envelope"></i> anjali.kapoor@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:anjali.kapoor@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BCA Faculty -->
+                <div class="faculty-card" data-department="bca">
+                    <img src="images/sanjay-mishra.jpg" alt="Prof. Sanjay Mishra" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/men/82.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Sanjay Mishra</h3>
+                        <p class="faculty-designation">Professor & HOD</p>
+                        <p class="faculty-department">Computer Applications</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> M.Tech in IT</p>
+                            <p><i class="fas fa-briefcase"></i> 12 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Web Development & DBMS</p>
+                            <p><i class="fas fa-envelope"></i> sanjay.mishra@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:sanjay.mishra@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faculty-card" data-department="bca">
+                    <img src="images/pooja-agarwal.jpg" alt="Prof. Pooja Agarwal" class="faculty-image" onerror="this.src='https://randomuser.me/api/portraits/women/78.jpg'">
+                    <div class="faculty-info">
+                        <h3>Prof. Pooja Agarwal</h3>
+                        <p class="faculty-designation">Assistant Professor</p>
+                        <p class="faculty-department">Computer Applications</p>
+                        <div class="faculty-details">
+                            <p><i class="fas fa-graduation-cap"></i> MCA, B.Tech</p>
+                            <p><i class="fas fa-briefcase"></i> 8 Years Experience</p>
+                            <p><i class="fas fa-book"></i> Programming & Software Engg.</p>
+                            <p><i class="fas fa-envelope"></i> pooja.agarwal@amit.edu</p>
+                        </div>
+                        <div class="faculty-contact">
+                            <a href="mailto:pooja.agarwal@amit.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty Stats -->
+            <div class="faculty-stats">
+                <h2 class="section-title">Faculty Excellence</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>200+</h3>
+                        <p>Faculty Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>80%</h3>
+                        <p>Ph.D. & Master's Holders</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <h3>300+</h3>
+                        <p>Research Publications</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-award"></i>
+                        <h3>40+</h3>
+                        <p>Awards & Honors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.aicte-india.org/" target="_blank"><i class="fas fa-angle-right"></i> AICTE</a></li>
+                        <li><a href="https://www.aku.ac.in/" target="_blank"><i class="fas fa-angle-right"></i> Aryabhatta Knowledge University</a></li>
+                        <li><a href="https://epathshala.nic.in/" target="_blank"><i class="fas fa-angle-right"></i> e-PG Pathshala</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Shodh Gangotri</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> NPTEL</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Swayam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Widwan</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Vidyamitra</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Feedback</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Spoken Tutorial</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Feedback Form For Teacher</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Student Feedback Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Adwaita Mission Institute of Technology College<br>
+                    Shivdham, P.O : Maniyarpur, Dam Road Bounsi<br>
+                    Dist.: Banka-813104 (Bihar)</p>
+                    <p><i class="fas fa-phone"></i> +91-9801820820, +91-8920770080</p>
+                    <p><i class="fas fa-envelope"></i> adwaitaaravind@gmail.com</p>
+                    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Read more</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023-24 © Adwaita Mission Institute of Technology All rights reserved.</p>
+                <p>Best view at 1600 X 900 Resolution</p>
+                <p style="float: right;">Total Visitors: <strong>80360</strong> | Updated: 21-Jan-2025 | <a href="contact.html" style="color: white;">Contact Us</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="faculty.js"></script>
+</body>
+</html>
+

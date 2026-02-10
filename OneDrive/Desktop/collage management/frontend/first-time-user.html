@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Time User - AMIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>AMIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="student-portal.html" class="active">Student Portal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="portal-container">
+        <div class="login-section" style="display: flex;">
+            <div class="login-box" style="max-width: 600px;">
+                <h2>First Time User Registration</h2>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 2rem;">
+                    <i class="fas fa-user-plus" style="font-size: 3rem; color: #2563eb;"></i>
+                </p>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 2rem;">
+                    Welcome! Please register to access the Student Portal for the first time.
+                </p>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-id-card"></i> Student ID *</label>
+                        <input type="text" name="student_id" placeholder="Enter your admission number" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Full Name *</label>
+                        <input type="text" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email Address *</label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Mobile Number *</label>
+                        <input type="tel" name="phone" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Date of Birth *</label>
+                        <input type="date" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Create Password *</label>
+                        <input type="password" name="password" id="password" placeholder="Create a strong password" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Confirm Password *</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" required>
+                            <span>I agree to the Terms & Conditions</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    <div class="login-links" style="justify-content: center; margin-top: 1.5rem;">
+                        <a href="student-portal.html"><i class="fas fa-arrow-left"></i> Back to Login</a>
+                    </div>
+                </form>
+                <div id="successMessage" style="display: none; background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 5px; margin-top: 1rem; text-align: center;">
+                    <i class="fas fa-check-circle"></i> Registration successful! Redirecting to login...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.aicte-india.org/" target="_blank"><i class="fas fa-angle-right"></i> AICTE</a></li>
+                        <li><a href="https://www.aku.ac.in/" target="_blank"><i class="fas fa-angle-right"></i> Aryabhatta Knowledge University</a></li>
+                        <li><a href="https://epathshala.nic.in/" target="_blank"><i class="fas fa-angle-right"></i> e-PG Pathshala</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Shodh Gangotri</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> NPTEL</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Swayam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Widwan</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Vidyamitra</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Feedback</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Spoken Tutorial</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Feedback Form For Teacher</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Student Feedback Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Adwaita Mission Institute of Technology College<br>
+                    Shivdham, P.O : Maniyarpur, Dam Road Bounsi<br>
+                    Dist.: Banka-813104 (Bihar)</p>
+                    <p><i class="fas fa-phone"></i> +91-9801820820, +91-8920770080</p>
+                    <p><i class="fas fa-envelope"></i> adwaitaaravind@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023-24 © Adwaita Mission Institute of Technology All rights reserved.</p>
+                <p>Best view at 1600 X 900 Resolution</p>
+                <p style="float: right;">Total Visitors: <strong>80360</strong> | Updated: 21-Jan-2025 | <a href="contact.html" style="color: white;">Contact Us</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/api-helper.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            showLoading(submitButton);
+            
+            // Get form data
+            const formData = new FormData(this);
+            formData.set('password2', confirmPassword);
+            formData.set('role', 'student');
+            
+            const result = await handleRegistration(formData);
+            
+            hideLoading(submitButton);
+            
+            if (result.success) {
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('successMessage').innerHTML = `
+                    <i class="fas fa-check-circle"></i> 
+                    <strong>Registration Successful!</strong><br>
+                    Name: ${formData.get('name')}<br>
+                    Email: ${formData.get('email')}<br>
+                    <br>
+                    <small>Redirecting to login...</small>
+                `;
+                
+                // Redirect after 3 seconds
+                setTimeout(function() {
+                    window.location.href = 'student-portal.html';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

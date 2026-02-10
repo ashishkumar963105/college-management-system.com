@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - AMIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>AMIT</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="student-portal.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Admissions</h1>
+        <p>Join the AMIT Family - Start Your Journey Today</p>
+    </section>
+
+    <section class="admissions-content">
+        <div class="container">
+            <div class="admission-process">
+                <h2 class="section-title">Admission Process</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Online Application</h3>
+                        <p>Fill out the online application form with required details</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Entrance Exam</h3>
+                        <p>Appear for entrance examination or submit valid scores</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Document Verification</h3>
+                        <p>Submit all required documents for verification</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Counseling</h3>
+                        <p>Attend counseling session and select your program</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Fee Payment</h3>
+                        <p>Complete fee payment to confirm admission</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admission-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Important Dates</h3>
+                        <ul>
+                            <li>Application Start: March 1, 2026</li>
+                            <li>Application End: May 31, 2026</li>
+                            <li>Entrance Exam: June 15, 2026</li>
+                            <li>Results: June 30, 2026</li>
+                            <li>Counseling: July 5-15, 2026</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Required Documents</h3>
+                        <ul>
+                            <li>10th & 12th Mark Sheets</li>
+                            <li>Transfer Certificate</li>
+                            <li>Entrance Exam Score Card</li>
+                            <li>Passport Size Photos</li>
+                            <li>ID Proof (Aadhar/PAN)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Eligibility Criteria</h3>
+                        <ul>
+                            <li>Minimum 60% in 12th</li>
+                            <li>Physics, Chemistry, Maths mandatory</li>
+                            <li>Valid entrance exam score</li>
+                            <li>Age: 17-25 years</li>
+                            <li>Medical fitness certificate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="application-form-section">
+                <h2 class="section-title">Apply Online</h2>
+                <form class="admission-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Program *</label>
+                            <select required>
+                                <option value="">Select Program</option>
+                                <optgroup label="Engineering Programs">
+                                    <option>B.Tech Computer Science</option>
+                                    <option>B.Tech Mechanical</option>
+                                    <option>B.Tech Electrical</option>
+                                    <option>B.Tech Civil</option>
+                                    <option>B.Tech Electronics & Communication</option>
+                                </optgroup>
+                                <optgroup label="Management">
+                                    <option>BBA - Business Administration</option>
+                                </optgroup>
+                                <optgroup label="Computer Applications">
+                                    <option>BCA - Computer Applications</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>12th Percentage *</label>
+                            <input type="number" step="0.01" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Address *</label>
+                        <textarea rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.aicte-india.org/" target="_blank"><i class="fas fa-angle-right"></i> AICTE</a></li>
+                        <li><a href="https://www.aku.ac.in/" target="_blank"><i class="fas fa-angle-right"></i> Aryabhatta Knowledge University</a></li>
+                        <li><a href="https://epathshala.nic.in/" target="_blank"><i class="fas fa-angle-right"></i> e-PG Pathshala</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Shodh Gangotri</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> NPTEL</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Swayam</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Widwan</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Vidyamitra</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Virtual Lab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Feedback</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Spoken Tutorial</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Feedback Form For Teacher</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Student Feedback Form</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Adwaita Mission Institute of Technology College<br>
+                    Shivdham, P.O : Maniyarpur, Dam Road Bounsi<br>
+                    Dist.: Banka-813104 (Bihar)</p>
+                    <p><i class="fas fa-phone"></i> +91-9801820820, +91-8920770080</p>
+                    <p><i class="fas fa-envelope"></i> adwaitaaravind@gmail.com</p>
+                    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top: 1rem;">Read more</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023-24 © Adwaita Mission Institute of Technology All rights reserved.</p>
+                <p>Best view at 1600 X 900 Resolution</p>
+                <p style="float: right;">Total Visitors: <strong>80360</strong> | Updated: 21-Jan-2025 | <a href="contact.html" style="color: white;">Contact Us</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .admissions-content {
+            padding: 4rem 0;
+        }
+        .admission-process {
+            margin-bottom: 4rem;
+        }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .step {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 10px;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .info-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        .info-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .info-card h3 {
+            margin-bottom: 1rem;
+        }
+        .info-card ul {
+            list-style: none;
+        }
+        .info-card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--bg-light);
+        }
+        .info-card ul li:before {
+            content: "✓ ";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .application-form-section {
+            margin-top: 4rem;
+        }
+        .admission-form {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
